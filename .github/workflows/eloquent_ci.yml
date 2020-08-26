@@ -1,11 +1,10 @@
-name: Dashing CI
+name: Eloquent CI
 
 on:
   pull_request:
     branches:
-      - 'dashing'
-      - 'dashing-devel'
-
+      - 'eloquent'
+      - 'eloquent-devel'
 jobs:
   test_environment:
     runs-on: [ubuntu-latest]
@@ -13,11 +12,11 @@ jobs:
       fail-fast: false
       matrix:
         ros_distribution:
-          - dashing
+          - eloquent
         include:
-          # Dashing Diademata (May 2019 - May 2021)
+          # Eloquent Elusor (November 2019 - November 2020)
           - docker_image: ubuntu:bionic
-            ros_distribution: dashing
+            ros_distribution: eloquent
             ros_version: 2
     container:
       image: ${{ matrix.docker_image }}
