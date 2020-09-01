@@ -1,3 +1,4 @@
+release_repo_url: https://github.com/flynneva/grbl_ros-release.git
 tracks:
   dashing:
     actions:
