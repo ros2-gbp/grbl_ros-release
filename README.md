@@ -1,3 +1,26 @@
+## grbl_ros (eloquent) - 0.1.1-1
+
+The packages in the `grbl_ros` repository were released into the `eloquent` distro by running `/usr/bin/bloom-release -y --no-web --ros-distro eloquent --override-release-repository-push-url https://github.com/flynneva/grbl_ros-release.git grbl_ros` on `Thu, 03 Sep 2020 19:26:10 -0000`
+
+The `grbl_ros` package was released.
+
+Version of package(s) in repository `grbl_ros`:
+
+- upstream repository: https://github.com/flynneva/grbl_ros.git
+- release repository: https://github.com/flynneva/grbl_ros-release.git
+- rosdistro version: `0.0.6-1`
+- old version: `0.0.10-1`
+- new version: `0.1.1-1`
+
+Versions of tools used:
+
+- bloom version: `0.9.8`
+- catkin_pkg version: `0.4.22`
+- rosdep version: `0.19.0`
+- rosdistro version: `0.8.2`
+- vcstools version: `0.1.42`
+
+
 ## grbl_ros (dashing) - 0.0.12-3
 
 The packages in the `grbl_ros` repository were released into the `dashing` distro by running `/usr/bin/bloom-release --rosdistro dashing --track dashing grbl_ros --edit` on `Thu, 03 Sep 2020 18:47:17 -0000`
