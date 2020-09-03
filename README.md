@@ -1,3 +1,26 @@
+## grbl_ros (foxy) - 0.0.8-2
+
+The packages in the `grbl_ros` repository were released into the `foxy` distro by running `/usr/bin/bloom-release -y --no-web --ros-distro foxy --override-release-repository-push-url https://github.com/flynneva/grbl_ros-release.git grbl_ros` on `Thu, 03 Sep 2020 20:03:56 -0000`
+
+The `grbl_ros` package was released.
+
+Version of package(s) in repository `grbl_ros`:
+
+- upstream repository: https://github.com/flynneva/grbl_ros.git
+- release repository: https://github.com/flynneva/grbl_ros-release.git
+- rosdistro version: `0.0.2-4`
+- old version: `0.0.8-1`
+- new version: `0.0.8-2`
+
+Versions of tools used:
+
+- bloom version: `0.9.8`
+- catkin_pkg version: `0.4.22`
+- rosdep version: `0.19.0`
+- rosdistro version: `0.8.2`
+- vcstools version: `0.1.42`
+
+
 ## grbl_ros (eloquent) - 0.1.1-2
 
 The packages in the `grbl_ros` repository were released into the `eloquent` distro by running `/usr/bin/bloom-release -y --no-web --ros-distro eloquent --override-release-repository-push-url https://github.com/flynneva/grbl_ros-release.git grbl_ros` on `Thu, 03 Sep 2020 19:29:57 -0000`
