@@ -1,25 +1,25 @@
-name: Eloquent Release
+name: Release
 
 on:
  push:
     paths:
+      - package.xml
       - 'package.xml'
     branches:
-      - eloquent
-
+      - main
 jobs:
   bloom-release:
     runs-on: ubuntu-latest
     steps:
     - name: checkout repo
       uses: actions/checkout@v2
-    - name: bloom release
+    - name: bloom_release
       id: bloom
       uses: at-wat/bloom-release-action@v0
       with:
-        ros_distro: eloquent
+        ros_distro: dashing eloquent foxy rolling
+        release_repository_push_url: https://github.com/flynneva/grbl_ros-release.git
         github_token_bloom: ${{ secrets.BLOOM_RELEASE_TOKEN }}
-        release_repository_push_url: https://github.com/${{ github.repository }}-release.git
         github_user: flynneva
         git_user: Evan Flynn
         git_email: evanflynn.msu@gmail.com
@@ -29,6 +29,6 @@ jobs:
       uses: actions/create-release@v1
       with:
         tag_name: ${{ steps.bloom.outputs.version }}
-        release_name: Eloquent Release ${{ steps.bloom.outputs.version }}
+        release_name: ${{ steps.bloom.outputs.version }}
       env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        GITHUB_TOKEN: ${{ secrets.BLOOM_RELEASE_TOKEN }}
